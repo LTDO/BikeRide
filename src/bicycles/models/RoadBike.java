@@ -14,4 +14,7 @@ public class RoadBike extends BicycleBase {
         changeSpeed(-4);
 
     }
+    public BicycleType bicycles() {
+        return BicycleType.RoadBike;
+    }
 }

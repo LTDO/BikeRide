@@ -1,14 +1,16 @@
 package bicycles;
 
+import bicycles.models.BicycleType;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BikeFromSpecTestThree {
 
     public void shouldReturnCurrentSpeedTandam() {
 
-        BicycleSpecification mountainBikeSpec = new BicycleSpecification(12, -7);
+        BicycleSpecification tandamBikeSpec = new BicycleSpecification(12, -7, BicycleType.Tandam);
 
-        Bicycle mountainBike = new BicycleFromSpec(mountainBikeSpec);
+        Bicycle mountainBike = new BicycleFromSpec(tandamBikeSpec);
 
         BikeRideThree bikeRide = new BikeRideThree(mountainBike);
         bikeRide.ride();

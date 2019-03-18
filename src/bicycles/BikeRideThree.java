@@ -14,8 +14,8 @@ public class BikeRideThree implements BikeRide {
 //        this.bicycle.accelerate();
 //        this.bicycle.accelerate();
 //        this.bicycle.accelerate();
-//        this.bicycle.accelerate();
-//        this.bicycle.accelerate();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
         this.bicycle.accelerate();
         this.bicycle.brake();
         this.bicycle.brake();

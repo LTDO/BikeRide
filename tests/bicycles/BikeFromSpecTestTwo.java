@@ -1,5 +1,6 @@
 package bicycles;
 
+import bicycles.models.BicycleType;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -8,7 +9,7 @@ public class BikeFromSpecTestTwo {
     @Test
     public void shouldTestBikeFromSpecTwo(){
 
-        BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -3);
+        BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -3, BicycleType.RoadBike);
 
         Bicycle mountainBike = new BicycleFromSpec(mountainBikeSpec);
 
