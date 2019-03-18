@@ -16,16 +16,14 @@ public class FunRide {
     }
 
     public String accept(Bicycle bicycle) {
-        list.add(bicycle);
+      //  list.add(bicycle);
 //        System.out.println(list.size() < maxNum);
-
         if (list.size() < maxNum) {
             list.add(bicycle);
             return "Accepted";
-        } else if (list.size() > maxNum) {
+        } else {
             return "Rejected";
         }
-        return null;
     }
 
 
