@@ -1,6 +1,6 @@
 package bicycles.models;
 
-public class Bicycle {
+public class Bicycle_b {
     int speed;
     public void accelerate(){
         speed += 5;
