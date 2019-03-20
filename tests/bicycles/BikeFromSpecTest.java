@@ -1,22 +1,31 @@
 package bicycles;
 
-import bicycles.models.BicycleType;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BikeFromSpecTest {
     @Test
-    public void shouldTestBicycleFromSpec(){
+    public void shouldTestBicycleFromSpecGetAccelerationMethod(){
 
-        BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -4, BicycleType.MountainBike);
+        BicycleSpecification bike_Spec = new BicycleSpecification(5, -3);
+        bike_Spec.getAccelerationSpeed();
+        assertEquals(2, 6);
+    }
+    @Test
+    public void shouldTestBicycleFromSpecBrakeMethod(){
 
-        Bicycle bicycle = new BicycleFromSpec(mountainBikeSpec);
-        BikeRideOne bikeRide = new BikeRideOne(bicycle);
+        BicycleSpecification bike_Spec = new BicycleSpecification(5, -3);
+        bike_Spec.getBrakeSpeed();
+        assertEquals(2, 6);
+    }
 
-        bikeRide.ride();
-        System.out.println("Mountain bike Speed is: " + bikeRide.currentSpeed());
-        assertEquals(2, bikeRide.currentSpeed());
+    @Test
+    public void shouldTestBicycleFromSpecBicycleTypeMethod(){
+
+        BicycleSpecification bike_Spec = new BicycleSpecification(5, -3);
+        bike_Spec.getBicycleType();
+        assertEquals(2, 6);
     }
 
 }
