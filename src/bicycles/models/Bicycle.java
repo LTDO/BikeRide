@@ -1,0 +1,17 @@
+package bicycles.models;
+
+public class Bicycle {
+    int speed;
+    public void accelerate(){
+        speed += 5;
+    }
+    public void brake(){
+        speed -= 3;
+    }
+    public int currentSpeed(){
+        return speed;
+    }
+    public int stop(){
+        return speed = 0;
+    }
+}
