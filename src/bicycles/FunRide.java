@@ -8,40 +8,25 @@ public class FunRide {
 
     int maxNum;
 
-    private ArrayList<Bicycle> list = new ArrayList<Bicycle>(maxNum);
+    private ArrayList<Bicycle> list = new ArrayList<>(maxNum);
 
-    public FunRide(int maxNum) {
+     FunRide(int maxNum) {
         this.maxNum = maxNum;
 
     }
-
-    public String accept(Bicycle bicycle) {
-      //  list.add(bicycle);
-//        System.out.println(list.size() < maxNum);
+    String accept(Bicycle bicycle) {
         if (list.size() < maxNum) {
-            list.add(bicycle);
             return "Accepted";
         } else {
             return "Rejected";
         }
     }
-
-
-    public int getCountForType(BicycleType bicycleType) {
-
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).bicycles() == bicycleType) {
+    int getCountForType(BicycleType bicycleType) {
+            if (list.contains(bicycleType)) {
                 maxNum++;
-            }
-        }
-        return maxNum;
-
+            }return maxNum;
     }
-
-        public int getEntertedCount(){
-
-             return  list.size();
-        }
+        int getEnteredCount(){return list.size();}
     }
 
 
