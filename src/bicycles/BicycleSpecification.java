@@ -8,7 +8,7 @@ public class BicycleSpecification {
     private int brakeSpeed;
     BicycleType bicycleType;
 
-    public BicycleSpecification(int accelerationSpeed, int brakeSpeed){
+    public BicycleSpecification(int accelerationSpeed, int brakeSpeed, BicycleType bicycleType){
 
         this.accelerationSpeed = accelerationSpeed;
         this.brakeSpeed = brakeSpeed;
