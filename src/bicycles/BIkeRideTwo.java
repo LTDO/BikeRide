@@ -1,10 +1,10 @@
 package bicycles;
 
-public class BIkeRideTwo implements BikeRide {
+public class BIkeRideTwo implements bicycles.BikeRide {
 //
-    private final Bicycle bicycle;
+    private final bicycles.Bicycle bicycle;
 
-    public BIkeRideTwo(Bicycle bicycle){ this.bicycle = bicycle;}
+    public BIkeRideTwo(bicycles.Bicycle bicycle){ this.bicycle = bicycle;}
 
     @Override
     public void ride() {
