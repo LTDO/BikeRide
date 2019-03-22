@@ -17,6 +17,7 @@ public class FunRide {
     }
     String accept(Bicycle bicycle) {
         if (list.size() < maxNum) {
+            list.add(bicycle);
             return "Accepted";
         } else {
             return "Rejected";

@@ -21,60 +21,62 @@ public class FunRideTest {
         Bicycle bicycle2 = new BicycleFromSpec(tandam_BikeSpec);
         Bicycle bicycle3 = new BicycleFromSpec(road_BikeSpec);
 
-        FunRide funRide = new FunRide(3);
+        FunRide funRide = new FunRide(4);
 
         funRide.accept(bicycle1);
         funRide.accept(bicycle2);
         funRide.accept(bicycle3);
 
         assertEquals(funRide.getEnteredCount(), 3);
-        assertEquals(funRide.getCountForType(BicycleType.MountainBike), 3);
+        assertEquals(funRide.getCountForType(BicycleType.MountainBike), 4);
         assertEquals(funRide.accept(bicycle1), "Accepted");
     }
-///*
     @Test
-    public void shouldTestFunRide2() {
-        BicycleSpecification roadBikeSpec = new BicycleSpecification(11, -4, BicycleType.RoadBike);
-        BicycleSpecification mountain_BikeSpec = new BicycleSpecification(5, -3, BicycleType.MountainBike);
-        BicycleSpecification tandam_BikeSpec = new BicycleSpecification(12, -7, BicycleType.Tandam);
-
-        Bicycle bicycle1 = new BicycleFromSpec(roadBikeSpec);
-        Bicycle bicycle2 = new BicycleFromSpec(mountain_BikeSpec);
-        Bicycle bicycle3 = new BicycleFromSpec(tandam_BikeSpec);
-
+    public void shouldTestGetCountForType(){
         FunRide funRide = new FunRide(3);
+        BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -3, BicycleType.MountainBike);
+        BicycleSpecification tandam_BikeSpec = new BicycleSpecification(11, -4, BicycleType.RoadBike);
+
+        Bicycle bicycle1 = new BicycleFromSpec(mountainBikeSpec);
+        Bicycle bicycle2 = new BicycleFromSpec(tandam_BikeSpec);
 
         funRide.accept(bicycle1);
         funRide.accept(bicycle2);
-        funRide.accept(bicycle3);
 
-        assertEquals(funRide.getEnteredCount(), 3);
-        assertEquals(funRide.getCountForType(BicycleType.RoadBike), 3);
-        assertEquals(funRide.accept(bicycle2), "Accepted");
+        assertEquals(funRide.getEnteredCount(), 2);
 
     }
+
     @Test
-    public void shouldTestFunRide3() {
+    public void shouldTestGetEnteredCount(){
+        FunRide funRide = new FunRide(4);
+        BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -3, BicycleType.MountainBike);
+        BicycleSpecification tandam_BikeSpec = new BicycleSpecification(11, -4, BicycleType.RoadBike);
 
-        BicycleSpecification roadBikeSpec = new BicycleSpecification(5, -3, BicycleType.RoadBike);
-        BicycleSpecification mountain_BikeSpec = new BicycleSpecification(5, -3, BicycleType.MountainBike);
-        BicycleSpecification tandam_BikeSpec = new BicycleSpecification(5, -3, BicycleType.Tandam);
-
-        Bicycle bicycle1 = new BicycleFromSpec(roadBikeSpec);
-        Bicycle bicycle2 = new BicycleFromSpec(mountain_BikeSpec);
-        Bicycle bicycle3 = new BicycleFromSpec(tandam_BikeSpec);
-
-        FunRide funRide = new FunRide(3);
+        Bicycle bicycle1 = new BicycleFromSpec(mountainBikeSpec);
+        Bicycle bicycle2 = new BicycleFromSpec(tandam_BikeSpec);
 
         funRide.accept(bicycle1);
         funRide.accept(bicycle2);
-        funRide.accept(bicycle3);
 
-        assertEquals(funRide.getEnteredCount(), 3);
-        assertEquals(funRide.getCountForType(BicycleType.Tandam), 3);
-        assertEquals(funRide.accept(bicycle3), "Accepted");
+        assertEquals(funRide.getEnteredCount(), 2);
 
     }
 
+    @Test
+    public void shouldTestGetAccept(){
+        FunRide funRide = new FunRide(4);
+        BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -3, BicycleType.MountainBike);
+        BicycleSpecification tandam_BikeSpec = new BicycleSpecification(11, -4, BicycleType.RoadBike);
+
+        Bicycle bicycle1 = new BicycleFromSpec(mountainBikeSpec);
+        Bicycle bicycle2 = new BicycleFromSpec(tandam_BikeSpec);
+
+        funRide.accept(bicycle1);
+        funRide.accept(bicycle2);
+
+        assertEquals(funRide.accept(bicycle1), "Accepted");
+
+    }
 
 }
