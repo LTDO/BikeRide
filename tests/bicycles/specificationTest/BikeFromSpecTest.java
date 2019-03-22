@@ -8,26 +8,42 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BikeFromSpecTest {
     @Test
-    public void shouldTestBicycleFromSpecGetAccelerationMethod(){
+    public void shouldTestBicycleSpecificationsForRoadBike(){
 
         BicycleSpecification bike_Spec = new BicycleSpecification(11, -4, BicycleType.RoadBike);
-        bike_Spec.getAccelerationSpeed();
-        assertEquals(2, 6);
+        System.out.println( "Bike Type" + bike_Spec.getBicycleType() +
+                            "Acceleration Speed: " + bike_Spec.getAccelerationSpeed() +
+                            "Brake Speed: " + bike_Spec.getBrakeSpeed());
+
+        assertEquals(2, bike_Spec.getAccelerationSpeed());
+        assertEquals(2, bike_Spec.getBrakeSpeed());
+        assertEquals(bike_Spec.getBicycleType(), "Road Bike", toString());
     }
     @Test
-    public void shouldTestBicycleFromSpecBrakeMethod(){
+    public void shouldTestBicycleSpecificationsForMountainBike(){
 
         BicycleSpecification bike_Spec = new BicycleSpecification(5, -3, BicycleType.MountainBike);
-        bike_Spec.getBrakeSpeed();
-        assertEquals(2, 6);
+        System.out.println( "Bike Type" + bike_Spec.getBicycleType() +
+                            "Acceleration Speed: " + bike_Spec.getAccelerationSpeed() +
+                            "Brake Speed: " + bike_Spec.getBrakeSpeed());
+
+        assertEquals(2, bike_Spec.getAccelerationSpeed());
+        assertEquals(2, bike_Spec.getBrakeSpeed());
+        assertEquals(bike_Spec.getBicycleType(), "Mountain Bike", toString());
     }
 
     @Test
-    public void shouldTestBicycleFromSpecBicycleTypeMethod(){
+    public void shouldTestBicycleSpecificationsForTandamBike(){
 
         BicycleSpecification bike_Spec = new BicycleSpecification(12, -7, BicycleType.Tandam);
-        bike_Spec.getBicycleType();
-        assertEquals(2, 6);
+        System.out.println( "Bike Type" + bike_Spec.getBicycleType() +
+                            "Acceleration Speed: " + bike_Spec.getAccelerationSpeed() +
+                            "Brake Speed: " + bike_Spec.getBrakeSpeed());
+
+        assertEquals(2, bike_Spec.getAccelerationSpeed());
+        assertEquals(2, bike_Spec.getBrakeSpeed());
+        assertEquals(bike_Spec.getBicycleType(),"Tandam", toString());
+
     }
 
 }
