@@ -1,7 +1,5 @@
 package bicycles.models;
 
-import bicycles.Bicycle;
-
 public abstract class BicycleBase implements Bicycle {
 
     protected int speed;

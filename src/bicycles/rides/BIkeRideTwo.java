@@ -1,10 +1,12 @@
-package bicycles;
+package bicycles.rides;
 
-public class BIkeRideTwo implements bicycles.BikeRide {
+import bicycles.models.Bicycle;
+
+public class BIkeRideTwo implements BikeRide {
 //
-    private final bicycles.Bicycle bicycle;
+    private final Bicycle bicycle;
 
-    public BIkeRideTwo(bicycles.Bicycle bicycle){ this.bicycle = bicycle;}
+    public BIkeRideTwo(Bicycle bicycle){ this.bicycle = bicycle;}
 
     @Override
     public void ride() {

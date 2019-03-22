@@ -1,6 +1,4 @@
-package bicycles;
-
-import bicycles.models.BicycleType;
+package bicycles.models;
 
 public interface Bicycle {
 
