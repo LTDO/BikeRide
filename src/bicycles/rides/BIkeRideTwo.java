@@ -3,7 +3,6 @@ package bicycles.rides;
 import bicycles.models.Bicycle;
 
 public class BIkeRideTwo implements BikeRide {
-//
     private final Bicycle bicycle;
 
     public BIkeRideTwo(Bicycle bicycle){ this.bicycle = bicycle;}

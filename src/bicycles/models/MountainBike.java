@@ -12,7 +12,6 @@ public class MountainBike extends BicycleBase {
         changeSpeed(-3);
 
     }
-
     @Override
     public BicycleType bicycles() {
         return BicycleType.MountainBike;

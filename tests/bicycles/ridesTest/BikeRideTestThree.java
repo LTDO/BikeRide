@@ -10,7 +10,6 @@ public class BikeRideTestThree {
     @Test
     public void shouldReturnCurrentSpeedTandam() {
 
-
         Tandam tObject = new Tandam();
 
         BikeRideOne bikeRide = new BikeRideOne(tObject);

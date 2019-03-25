@@ -8,7 +8,6 @@ public abstract class BicycleBase implements Bicycle {
 
          speed += x;
     }
-
     public int stop(){
 
         return 0;

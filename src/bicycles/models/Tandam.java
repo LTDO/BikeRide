@@ -5,11 +5,9 @@ public class Tandam extends BicycleBase {
     public void accelerate() {
         changeSpeed(12);
     }
-
     @Override
     public void brake() {
         changeSpeed(-7);
-
     }
     public BicycleType bicycles() {
         return BicycleType.Tandam;

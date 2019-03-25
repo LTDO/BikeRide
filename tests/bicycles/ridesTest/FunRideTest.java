@@ -1,14 +1,13 @@
-package bicycles;
+package ridesTest;
 
 import bicycles.models.Bicycle;
 import bicycles.models.BicycleType;
+import bicycles.rides.FunRide;
 import bicycles.specifications.BicycleFromSpec;
 import bicycles.specifications.BicycleSpecification;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-//import static org.junit.jupiter.api.AssertEquals.assertEquals;
 
 public class FunRideTest {
     @Test

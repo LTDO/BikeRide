@@ -10,7 +10,6 @@ public class BikeRideTestTwo {
     @Test
     public void shouldReturnCurrentSpeedRoadBike() {
 
-
         RoadBike rObject = new RoadBike();
 
         BIkeRideTwo bikeRide = new BIkeRideTwo(rObject);

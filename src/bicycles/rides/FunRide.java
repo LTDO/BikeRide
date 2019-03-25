@@ -1,4 +1,4 @@
-package bicycles;
+package bicycles.rides;
 
 import bicycles.models.Bicycle;
 import bicycles.models.BicycleType;
@@ -11,11 +11,11 @@ public class FunRide {
 
     private ArrayList<Bicycle> list = new ArrayList<>(maxNum);
 
-     FunRide(int maxNum) {
+     public FunRide(int maxNum) {
         this.maxNum = maxNum;
 
     }
-    String accept(Bicycle bicycle) {
+    public String accept(Bicycle bicycle) {
         if (list.size() < maxNum) {
             list.add(bicycle);
             return "Accepted";
@@ -23,12 +23,12 @@ public class FunRide {
             return "Rejected";
         }
     }
-    int getCountForType(BicycleType bicycleType) {
+    public int getCountForType(BicycleType bicycleType) {
             if (list.contains(bicycleType)) {
                 maxNum++;
             }return maxNum;
     }
-        int getEnteredCount(){return list.size();}
+        public int getEnteredCount(){return list.size();}
     }
 
 

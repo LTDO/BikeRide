@@ -11,18 +11,12 @@ public class BikeRideThree implements BikeRide {
     @Override
     public void ride() {
 
-//        this.bicycle.accelerate();
-//        this.bicycle.accelerate();
-//        this.bicycle.accelerate();
-//        this.bicycle.accelerate();
-//        this.bicycle.accelerate();
         this.bicycle.accelerate();
         this.bicycle.accelerate();
         this.bicycle.accelerate();
         this.bicycle.brake();
         this.bicycle.brake();
         this.bicycle.brake();
-//        this.bicycle.stop();
     }
 
     @Override
